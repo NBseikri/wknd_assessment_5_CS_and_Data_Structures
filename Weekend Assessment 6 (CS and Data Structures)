@@ -1,0 +1,65 @@
+Weekend Assessment 6 (CS and Data Structures)
+
+Part I: Discussion Questions
+
+Runtime:
+
+1.  The number of total animal crackers in a box determines your workload. Pessimistically, you would assume that you would have to inspect every single cracker in the box before determining you had an elephant. 
+
+2.  From fastest to slowest:
+    a.  O(1)
+    b.  O(log n)
+    c.  O(n)
+    d.  O(n log n)
+    e.  O(n^2)
+    f.  O(2^n)
+    g.  O(n!)
+
+Stacks and Queues:
+
+1.  Stack vs. Queue
+    1.  Stack
+    2.  Queue
+    3.  Stack
+
+2.  Waiting for your turn at the DMV or a deli counter with assigned numbers; a FIFO accounting approach where the oldest inventory items are recorded as sold first.
+
+3.  Doing the dishes at the top of your sink before the dishes at the bottom; laying off newly hired employees before employees that have been in a company longer.
+
+Linked Lists
+
+1.  The nodes are the rectangles that contain a left hand box for the node’s data attribute (the text) and a right hand box for the next attribute that points to the next node in the linked list (the arrow pointing to the next rectangle similarly made up of two boxes). The head attribute of the linked list object is a reference to the first node in the linked list diagram (the node with the data attribute “apple”). The tail attribute of the linked list object is a reference to the last node in the liked list diagram (the node with the data attribute “cherry”). 
+
+2.  Doubly-linked lists have nodes that keep track of what’s before and after the node; singly-linked lists only keep track of what’s after the node.
+
+3.  If we keep track of the tail in a linked list, we don’t have to traverse the entire linked list to find the node with a next attribute of none. We can simply go to the tail and append.  
+
+Trees
+
+1.  Burrito Order (BFS):
+    a.  [food]
+    b.  [Italian, Indian, Mexican]
+    c.  [Indian, Mexican, lasagna, pizza]
+    d.  [Mexican, lasagna, pizza, tikka masala, saag]
+    e.  [lasagna, pizza, tikka masala, saag, burrito, tacos, enchiladas]
+    f.  [pizza, tikka masala, saag, burrito, tacos, enchiladas]
+    g.  [tikka masala, saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+    h.  [saag, burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+    i.  [burrito, tacos, enchiladas, thin crust, Chicago-style, New York-style, Sicilian]
+        i.  We found burrito!
+
+2.  Chicago-style Pizza (DFS):
+    a.  [food]
+    b.  [Italian, Indian, Mexican]
+    c.  [Italian, Indian, burritos, tacos, enchiladas]
+    d.  [Italian, Indian, burritos, tacos]
+    e.  [Italian, Indian, burritos]
+    f.  [Italian, Indian]
+    g.  [Italian, tikka masala, saag]
+    h.  [Italian, tikka masala]
+    i.  [Italian]
+    j.  [lasagna, pizza]
+    k.  [lasagna, thin crust, Chicago-style, New York-style, Sicilian]
+    l.  [lasagna, thin crust, Chicago-style, New York-style]
+    m.  [lasagna, thin crust, Chicago-style]
+        i.  We found Chicago-style!
